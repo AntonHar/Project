@@ -83,7 +83,7 @@ public class Bog {
             else System.out.print("Большее число - " + b);*/
 
         // Задание 7
-        Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
         System.out.print("a ");
         int a = scanner.nextInt();
         String b = " программист";
@@ -97,7 +97,7 @@ public class Bog {
                     System.out.print(a + b + "а");
                 } else {
                     System.out.print(a + b + "ов");
-                }
+                }*/
 
             }
         }
