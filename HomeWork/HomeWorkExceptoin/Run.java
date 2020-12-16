@@ -3,18 +3,17 @@ package HomeWorkExceptoin;
 public class Run {
     public static <ex> void main(String[] args) throws Exception {
 
-       Car audi = new Car(100,200,"Audi");
-        audi.speed = 250;
-        audi.price = 20000;
+       Car audi = new Car(200,30000,"MAZWRATI");
+       /* audi.speed = 250;
+        audi.price = 20000;*/
         audi.getTotalInformation();
-        System.out.println();
 
         try {
             audi.start();
         } catch (Exception ex) {
             System.out.println("Perform a restart of the engine");
             System.out.println();
-            audi.setNumberStart(audi.getNumberStart() +1);
+            audi.setNumberStart(audi.getNumberStart() + 1);
             audi.start();
             System.out.println();
         }
@@ -28,11 +27,20 @@ public class Run {
         } catch (Exception ex) {
             System.out.println("Perform a restart of the engine");
             System.out.println();
-            audi.setNumberStart(audi.getNumberStart() - 2);
-            audi.start();
+            car1.setNumberStart(car1.getNumberStart() - 1);
+            car1.start();
             System.out.println();
         }
 
+        Car car2 = new Car();
+        car2.getTotalInformation();
+        System.out.println();
 
+        try {
+            car2.start();
+        } catch (Exception ex) {
+            System.out.println("Perform a restart of the engine");
+            car2.restart();
+        }
     }
 }

@@ -52,7 +52,7 @@ public class GeneratorUtil {
     static int generatePrice()
     {
         Random randomPrice = new Random();
-        price = randomPrice.nextInt(301) + 100;
+        price = randomPrice.nextInt(1000000) + 40000;
         return  price;
     }
 }

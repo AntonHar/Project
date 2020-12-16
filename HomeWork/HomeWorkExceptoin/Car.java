@@ -1,20 +1,18 @@
 package HomeWorkExceptoin;
 
-public class Car extends GeneratorUtil{
-    int speed1;
-    int price1;
-    String brand1;
+import java.sql.SQLOutput;
 
-    public Car(int speed1, int price1, String brand1){
-        this.brand1 = brand;
-        this.speed1 =speed;
-        this.price1 = price;
-    }
+public class Car extends GeneratorUtil{
 
     public Car(){
-        this.brand = getBrand();
-        this.speed = getSpeed();
-        this.price = getPrice();
+        this.brand = generateBrand();
+        this.speed = generateSpeed();
+        this.price = generatePrice();
+    }
+    public Car(int speed,int price, String brand){
+        this.brand = brand;
+        this.speed = speed;
+        this.price = price;
     }
 
     void getTotalInformation(){
@@ -48,5 +46,16 @@ public class Car extends GeneratorUtil{
         return numberStart;
     }
 
+    void restart () {
+        numberStart = numberStart -9;
+        if (numberStart > 0 & numberStart < 20) {
+                System.out.println("The engine restart was successful. Enjoy your journey.");
+        } else {
+                System.out.println("The restart failed. Contact The service center");
+        }
+    }
+
+
 
 }
+
