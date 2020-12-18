@@ -3,9 +3,9 @@ package HomeWorkExceptoin;
 public class Run {
     public static <ex> void main(String[] args) throws Exception {
 
-       Car audi = new Car(200,30000,"MAZWRATI");
-       /* audi.speed = 250;
-        audi.price = 20000;*/
+       Car audi = new Car(200,30000,"MAZERATI");
+       audi.speed = 250;
+        audi.price = 20000;
         audi.getTotalInformation();
 
         try {
