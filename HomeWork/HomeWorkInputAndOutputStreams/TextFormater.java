@@ -41,21 +41,25 @@ public class TextFormater  {
              BufferedWriter writer = new BufferedWriter(new FileWriter(desp))) {
 
             String text = "";
-                while ((text = reader.readLine()) != null) {
-                    StringBuilder builder = new StringBuilder(text.toLowerCase());
-                    String def = builder.toString();
-                    String reverse = builder.reverse().toString();
-                    boolean chekin = reverse.equals(def);
-                    if (chekin = true) {
-                        writer.write(text);
-                    }
+            while ((text = reader.readLine()) != null) {
+                StringBuilder builder = new StringBuilder(text.toLowerCase());
+                String def = builder.toString();
+                String reverse = builder.reverse().toString();
+                boolean chekin = reverse.equals(def);
+                if (chekin = true) {
+                    writer.write(text);
+                } else {
+                    continue;
                 }
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
 
+
 }
+
 
 
 
