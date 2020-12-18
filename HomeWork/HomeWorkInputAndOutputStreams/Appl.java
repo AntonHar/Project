@@ -18,7 +18,6 @@ public class Appl {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(srv))) {
 
-            String tepm = "";
             String temp = reader.toString();
 
             for (int i = 0; i < temp.length(); i++) {
@@ -37,7 +36,7 @@ public class Appl {
         }
     }
 }
-
+//добавил пулреквест
 
 
 
